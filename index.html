@@ -67,6 +67,55 @@
 			<li><a href="neon.html" target="_blank">Neon style</a></li>
 		</ol>
 
+		<fieldset>
+			<h2>Забронировать</h2>
+			<form action="https://jsonplaceholder.typicode.com/posts" method="post">
+				<fieldset>
+					<label><input type="radio" name="hall" value="80's vibes">80's vibes</label>
+					<label><input type="radio" name="hall" value="star wars">star wars</label>
+					<label><input type="radio" name="hall" value="wild west">wild west</label>
+					<label><input type="radio" name="hall" value="neon style">neon style</label>
+				</fieldset>
+
+				<fieldset>
+					<legend>Собери набор развлечений</legend>
+					<fieldset>
+						<legend>Приставка:</legend>
+						<label><input type="radio" name="console" value="PlayStation">PlayStation</label>
+						<label><input type="radio" name="console" value="Sega Mega Drive">Sega Mega Drive</label>
+						<label><input type="radio" name="console" value="X-box One S">X-box One S</label>
+						<label><input type="radio" name="console" value="Dendy">Dendy</label>
+					</fieldset>
+					<fieldset>
+						<legend>Настольные игры:</legend>
+						<label><input type="checkbox" name="games" value="Jenga">Jenga</label>
+						<label><input type="checkbox" name="games" value="Monopoly">Monopoly</label>
+						<label><input type="checkbox" name="games" value="Manchin">Манчкин</label>
+						<label><input type="checkbox" name="games" value="Alias">Alias</label>
+					</fieldset>
+					<fieldset>
+						<legend>Дополнительно:</legend>
+						<label><input type="checkbox" name="extra" value="Karaoke">Караоке</label>
+						<label><input type="checkbox" name="extra" value="vr">VR</label>
+					</fieldset>
+				</fieldset>
+
+				<fieldset>
+					<legend>Выберите дату и время</legend>
+					<label>Дата* <input type="date" name="date" required></label>
+					<label>Время* <input type="time" name="time" required></label> <br>
+					<label>Количество человек* <input type="number" name="people" required></label> <br>
+					<label>Имя* <input type="text" name="name" required></label> <br>
+					<label>Фамилия* <input type="text" name="surname" required></label> <br>
+					<label>Номер телефона* <input type="tel" name="phone" required></label> <br>
+					<label><input type="checkbox" name="age" value="> 18">Я старше 18 лет</label>
+				</fieldset>
+
+				<button type="submit">Забронировать</button>
+				<label><input type="checkbox" name="personalData" value="agree" required>Согласен на обработку данных</label>
+			</form>
+		</fieldset>
+
 		<h2 id="about">О нас</h2>
 		<p>Для наших гостей мы создали <i>концептуально новое игровое пространство виртуальной реальности</i> в центральной части города.</p>
 		<p>Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками со всего мира.</p>
