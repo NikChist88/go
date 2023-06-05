@@ -1,0 +1,32 @@
+.faq__list {
+  padding: 0;
+}
+
+.faq__item {
+	background-color: #fff;
+	color: #1c1a1a;
+	font-weight: 700;
+	font-size: 24px;
+	padding: 30px 70px;
+	margin-bottom: 20px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.faq__item:nth-child(even) {
+	color: #ffffff;
+	background-color: #440f51;
+}
+
+.faq__item::after {
+  content: url('img/open.svg');
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+}
+
+.faq__item:nth-child(odd)::after {
+	content: url('img/open-purple.svg');
+}
